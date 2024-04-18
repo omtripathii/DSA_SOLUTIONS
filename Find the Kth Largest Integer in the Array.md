@@ -55,3 +55,30 @@ class Solution {
         return result.intValue();
     }
 }
+
+## BigInteger in Java: Summary
+
+1. **Creating BigInteger from a String:**
+
+    - `BigInteger` represents arbitrary-precision integers in Java.
+    - Use `BigInteger(String value)` to create a `BigInteger` object from a String representation of an integer.
+    - This is necessary for numbers exceeding primitive integer types (`int`, `long`) to avoid precision loss.
+
+2. **Converting BigInteger to int:**
+
+    - `BigInteger` provides methods to convert its values to primitive types (`int`, `long`, `float`, `double`).
+    - Use `intValue()` to convert a `BigInteger` to an `int`, allowing interaction with parts of your program expecting primitive types.
+
+**Use Cases:**
+
+- Employ `BigInteger` for calculations involving very large integers.
+- Utilize `intValue()`, `longValue()`, `floatValue()`, and `doubleValue()` methods for conversions to primitive types:
+  - Performing calculations requiring primitive types.
+  - Compatibility with methods expecting primitive types.
+
+**In essence:**
+
+- `BigInteger` handles arbitrarily large integers.
+- `new BigInteger(String value)` initializes `BigInteger`s from String representations.
+- Methods like `intValue()` convert `BigInteger` values to primitive types when necessary.
+
