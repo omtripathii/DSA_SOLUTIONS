@@ -1,4 +1,4 @@
-** Easy Solution -- Not all test cases  **
+**Easy Solution -- Not all test cases **
 
 ```java
 import java.util.ArrayList;
